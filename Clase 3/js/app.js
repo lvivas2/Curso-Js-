@@ -7,17 +7,19 @@
 // for (let i = 0; i < limite; i++) {
 //     console.log(Numero)
 
-//     Numero <= 10 
+//     Numero += 1 
 
    
 // }
 
 
-let numero = 0
+let numero = parseInt(prompt('Ingrese el número que iniciara la cuenta'))
 
-while(numero <= 10){
+const limite = parseInt(prompt('Ingrese el limite'))
+
+while(numero <= limite ){
     console.log("Valor actual:" + numero)
-    numero =  numero + 1
+    numero += 1
 }
 
 
