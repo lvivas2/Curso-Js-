@@ -1,0 +1,61 @@
+$color_submenus: white;
+$color_texto: black;
+
+@import "./home";
+@import "./footer";
+@import "./nosotros";
+@import "./proyectos";
+@import "./contactos";
+@import "./404";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    background: linear-gradient(red, #202020);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    font-size: 70px;
+    font-weight: 900;
+}
+
+h3 {
+    color: $color_submenus;
+}
+
+header {
+    padding: 1em 0;
+    background-color: #202020;
+    position: fixed;
+}
+
+.menu {
+    span {
+        color: white !important;
+
+        &:hover {
+            color: red !important;
+            border-radius: 25px;
+            transition: background-color 1s ease-out;
+            outline: 0;
+            padding: 5px !important;
+            border: 1px solid red;
+        }
+    }
+}

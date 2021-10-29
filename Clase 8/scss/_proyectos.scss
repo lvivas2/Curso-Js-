@@ -1,0 +1,71 @@
+.page {
+    .section__proyectos {
+        .section__proyectos--uno {
+            background-color: black;
+            border-top: 2px solid red;
+            padding: 80px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            justify-items: center;
+
+            @media (max-width: 700px) {
+                padding: 10px;
+            }
+
+            a{
+                color: red;
+                &:hover{
+                    color: royalblue;
+                }
+            }
+
+            img {
+                margin: 10px;
+                height: 100%;
+                width: 180px;
+                border: 2px solid red;
+                opacity: 0.5;
+                transition: all 0.5s;
+                @media (max-width: 700px) {
+                    border: none;
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+            p {
+                padding-top: 100px;
+                
+            }
+        }
+
+        .section__proyectos--item {
+            @media (max-width: 700px) {
+                margin: auto;
+                background: white;
+                border-radius: 100px;
+                overflow: hidden;
+
+                .img--tian {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+.transform_up {
+    transform: translatex(20%);
+}
+.transform_left {
+    transform: translatex(20%);
+}
+.transform_right {
+    transform: translatex(-20%);
+}
+
+.img__aparece {
+    opacity: 1 !important;
+    transform: none;
+}
