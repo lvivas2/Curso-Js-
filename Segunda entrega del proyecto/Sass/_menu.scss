@@ -1,0 +1,68 @@
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 1;
+    .logo{
+        position: relative;
+        color: $ColorMenu;
+        font-size: 2em;
+        letter-spacing: 2px;
+        transition: 1.5s;
+        text-decoration: none;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                list-style: none;
+                a{
+                    position: relative;
+                    margin: 0 15px;
+                    text-decoration: none;
+                    color:$ColorMenu;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                    transition: 0.7s;
+                }
+            }
+        }
+    }
+    
+}
+
+// esta clase es activada al hacer scroll
+.abajo{
+    background: rgb(29, 18, 4);
+    padding: 15px 20px;
+
+    .logo{
+        color: white;
+    }
+    nav{
+        ul{
+            li{
+                a{
+
+                    color: white;
+                }
+            }
+        }
+    }
+
+    
+}
+

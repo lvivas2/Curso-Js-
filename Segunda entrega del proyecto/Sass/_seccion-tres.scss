@@ -1,0 +1,177 @@
+
+.section_tres{
+    display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        
+    background-color: rgb(40, 44, 44);
+
+    @each $canchas in cancha1, cancha2, cancha3{
+
+       .#{$canchas}{ height: 50vh;
+        width: 50%;
+        background-size: cover;
+        
+        
+      
+        
+    }
+    }
+    .cancha1{
+        margin: 10px;
+        background-image: url(../img/seccion_tres/cancha1.jpg);
+        
+    }
+    .cancha2{
+        margin: 10px;
+        background-image: url(../img/seccion_tres/cancha2.webp);
+    }
+    .cancha3{
+        margin: 10px;
+        background-image: url(../img/seccion_tres/cancha3.jpg);
+    }
+
+
+    .btn-canchas{
+        padding: .5rem .3rem;
+        border-radius: 3rem;
+        margin: 10px;
+        display: flex;
+        align-items: stretch;
+        
+
+    }
+}
+
+
+
+
+.reserva{
+    display: none;
+}
+
+
+//Formulario 
+
+// .desc__contact {
+//     padding-top: 100px !important;
+//     padding-bottom: 50px;
+//     @media (min-width: 700px) {
+//         max-width: 800px;
+//         margin: auto;
+//     }
+// }
+
+.contact {
+    color: white;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    .flecha{
+        margin: 15px;
+        display: flex;
+        font-size: 30px;
+        position:absolute;
+    }
+    .contact__logo {
+        font-size: 3em !important;
+        color: white;
+        text-align: center;
+        margin: auto;
+
+        span {
+            color: red;
+        }
+        @media (min-width: 700px) {
+            max-width: 500px;
+        }
+    }
+
+    .contact__wrapper {
+        box-shadow: 0 0 20px 0 rgba(225, 255, 255, 0.3);
+        .contact__wrapper > * {
+            padding: 1em;
+
+            @media (min-width: 700px) {
+                padding: 2em;
+            }
+        }
+
+        // @media (min-width: 700px) {
+        //     display: grid;
+        //     grid-template-columns: 2fr 1fr;
+        // }
+
+        .contact__form form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           
+            .contenidoCalendario{
+                text-align: center;
+                grid-column: 1/3;
+                .calendario{
+                    list-style: none;
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    text-align: center;
+                    
+                    .first-day{
+                        grid-column-start: 5 ;
+                    }
+
+                    .day-name{
+                      
+                        font-weight: bold;
+                        text-align: center;
+                        
+                    }
+                    
+                }
+            
+        }
+
+            .block {
+                
+                grid-column: 1/3;
+            }
+
+            p {
+                margin: 0;
+                padding: 1em;
+            }
+            button,
+            input{
+                width: 100%;
+                padding: 0.7em;
+                border: none;
+                background: none;
+                outline: 0;
+                color: white;
+                border-bottom: 1px solid red;
+            }
+
+            button {
+                background: red;
+                border: 0;
+                text-transform: uppercase;
+                padding: 1em;
+                color: black;
+                &:hover,
+                &:focus {
+                    background: #d63031;
+                    color: white;
+                    transition: background-color 1s ease-out;
+                    outline: 0;
+                }
+            }
+        }
+
+        
+    }
+}
+
+
+.removerFormulario{
+    display: none;
+}
